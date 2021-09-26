@@ -1,6 +1,6 @@
 const inquierer = require('inquirer');
 const fs = require('fs');
-const InputPrompt = require('inquirer/lib/prompts/input');
+const format = require('./src/generate');
 
 const questions = [
     {
@@ -45,3 +45,21 @@ const questions = [
         message: "Please provide an email address so other developers can contact you if they have questions about your project."
     },
 ];
+
+// function to write the file
+function writeToFile (fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if(err){
+            console.log(err)
+        } else {
+            console.log('Success, your README was created!')
+        }
+    })
+}
+
+// Initialize the app
+function init (){
+ 
+};
+
+init();
