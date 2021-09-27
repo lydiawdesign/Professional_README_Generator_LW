@@ -1,7 +1,8 @@
 const inquierer = require('inquirer');
 const fs = require('fs');
-const format = require('./src/generate');
+const generateFile = require('./src/generate').default;
 
+// prompted for information about my application
 const questions = [
     {
         type: 'input', 
@@ -21,12 +22,12 @@ const questions = [
     {
         type: 'input', 
         name:'usage',
-        message: "How do you use your project?"
+        message: "What is the usage informaton for your project"
     },
     {
         type: 'input', 
         name:'contribution',
-        message: "How should people contribute to your project?"
+        message: "What is are your project's contribution guidelines?"
     },
     {
         type: 'input', 
@@ -41,8 +42,13 @@ const questions = [
     },
     {
         type: 'input', 
-        name:'questions',
+        name:'email',
         message: "Please provide an email address so other developers can contact you if they have questions about your project."
+    },
+    {
+        type: 'input', 
+        name:'github',
+        message: "What is your GitHub username?"
     },
 ];
 
@@ -59,7 +65,11 @@ function writeToFile (fileName, data) {
 
 // Initialize the app
 function init (){
- 
+    inquierer.prompt(questions)
+    .then((data) => {
+        const readMeFile = generateFile(data)
+        writeToFile('README.md',readMe)
+    });
 };
 
 init();

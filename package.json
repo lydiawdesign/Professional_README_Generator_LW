@@ -1,0 +1,24 @@
+{
+  "name": "Professional_README_Generator_LW",
+  "version": "1.0.0",
+  "description": "Link to Video Demonstration:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lydiawdesign/Professional_README_Generator_LW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lydiawdesign/Professional_README_Generator_LW/issues"
+  },
+  "homepage": "https://github.com/lydiawdesign/Professional_README_Generator_LW#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.5"
+  }
+}
