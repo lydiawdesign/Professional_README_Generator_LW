@@ -1,6 +1,6 @@
-const inquierer = require('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
-const generateFile = require('./src/generate').default;
+const generateFile = require('./util/generateFile').default;
 
 // prompted for information about my application
 const questions = [
@@ -55,21 +55,22 @@ const questions = [
 // function to write the file
 function writeToFile (fileName, data) {
     fs.writeFile(fileName, data, (err) => {
-        if(err){
-            console.log(err)
-        } else {
-            console.log('Success, your README was created!')
-        }
+        err ? console.log(err) : console.log('Success!')
     })
 }
 
 // Initialize the app
 function init (){
-    inquierer.prompt(questions)
-    .then((data) => {
-        const readMeFile = generateFile(data)
-        writeToFile('README.md',readMe)
+    inquirer
+    .prompt(questions)
+    .then(function (userInput) {
+        // console.log(userInput)
+
+
+        writeToFile("README.md", generateFile(userInput));
+        // this is where the error is ^^
     });
 };
+
 
 init();
