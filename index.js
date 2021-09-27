@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateFile = require('./util/generateFile').default;
+const generateFile = require('./util/generateFile');
 
 // prompted for information about my application
 const questions = [
