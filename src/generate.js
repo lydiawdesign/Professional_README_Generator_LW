@@ -35,4 +35,4 @@ Feel free to email me at ${data.questions} or view my github profile at https://
 `;
 }
 
-export default generateFile;
+module.exports = generateFile;
