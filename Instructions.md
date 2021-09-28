@@ -37,4 +37,7 @@ THEN I am taken to the corresponding section of the README
 
 ##Screenshots##
 
-##Screenshots##
+##Contact##
+
+Copyright (c) 2021 Lydia Williamson
+Contact: lydiawdesign@gmail.com

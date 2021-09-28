@@ -22,7 +22,7 @@ const questions = [
     {
         type: 'input', 
         name:'usage',
-        message: "What is the usage informaton for your project"
+        message: "What is the usage informaton for your project?"
     },
     {
         type: 'input', 
@@ -68,7 +68,6 @@ function init (){
 
 
         writeToFile("README.md", generateFile(userInput));
-        // this is where the error is ^^
     });
 };
 

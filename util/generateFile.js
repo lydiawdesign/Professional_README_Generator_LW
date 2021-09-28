@@ -1,7 +1,6 @@
 function generateFile(data){
     // project title displayed as README file
     return`# ${data.title}
-
     
     ## Title:   ${data.title}
 

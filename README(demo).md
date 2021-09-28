@@ -1,10 +1,9 @@
-# jlfd
-
+# Testing Project
     
-    ## Title:   jlfd
+    ## Title:   Testing Project
 
     ## Description:
-    jfkdls
+    This is a test to see the readme file that is created
 
     ## Table of Contents:
     - [Installation](#installation)
@@ -14,21 +13,21 @@
     - [Contact for Questions](#email)
 
     ## Installation:
-    jfdkl
+    this is just a test
 
     ## Usage:
-    jfkds
+    this is still a test
 
     // ## License:
     // 
 
     ## Contribution:
-    jfdskl
+    testing
 
     ## Testing:
-    j
+    testing 123
 
     ## Contact for Questions:
-    Feel free to email me at undefined or view my github profile at https://github.com/jfdkl
+    Feel free to email me at undefined or view my github profile at https://github.com/lydiawdesign
 
     
