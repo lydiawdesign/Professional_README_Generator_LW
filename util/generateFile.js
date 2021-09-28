@@ -30,8 +30,7 @@ function generateFile(data){
     ${data.testing}
 
     ## Contact for Questions:
-    Feel free to email me at ${data.questions} or view my github profile at https://github.com/${data.github}
-
+    Feel free to email me at ${data.email} or view my github profile at https://github.com/${data.github}
     `;
 };
 

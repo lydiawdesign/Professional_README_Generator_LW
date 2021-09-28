@@ -38,7 +38,7 @@ const questions = [
         type: 'checkbox', 
         name:'licensing',
         message: "Choose a license for your project?",
-        choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'Common-Development-and Distribution', 'None'],
+        choices: ['MIT', 'Mozilla-Public', 'None'],
     },
     {
         type: 'input', 
@@ -65,7 +65,6 @@ function init (){
     .prompt(questions)
     .then(function (userInput) {
         // console.log(userInput)
-
 
         writeToFile("README.md", generateFile(userInput));
     });
