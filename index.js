@@ -1,8 +1,9 @@
+// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateFile = require('./util/generateFile');
 
-// prompted for information about my application
+// TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input', 
@@ -53,14 +54,14 @@ const questions = [
 ];
 
 
-// function to write the file
+// TODO: Create a function to write README file
 function writeToFile (fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         err ? console.log(err) : console.log('Success!')
     })
 }
 
-// Initialize the app
+// TODO: Create a function to initialize app
 function init (){
     inquirer
     .prompt(questions)
@@ -70,5 +71,5 @@ function init (){
     });
 };
 
-
+// Function call to initialize app
 init();
