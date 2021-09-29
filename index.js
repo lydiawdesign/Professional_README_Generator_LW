@@ -36,9 +36,9 @@ const questions = [
     },
     {
         type: 'checkbox', 
-        name:'licensing',
+        name:'license',
         message: "Choose a license for your project?",
-        choices: ['MIT', 'Mozilla-Public', 'None'],
+        choices: ['MIT', 'None'],
     },
     {
         type: 'input', 
@@ -52,6 +52,7 @@ const questions = [
     },
 ];
 
+
 // function to write the file
 function writeToFile (fileName, data) {
     fs.writeFile(fileName, data, (err) => {
@@ -63,10 +64,9 @@ function writeToFile (fileName, data) {
 function init (){
     inquirer
     .prompt(questions)
-    .then(function (userInput) {
+    .then(function (answers) {
         // console.log(userInput)
-
-        writeToFile("README.md", generateFile(userInput));
+        writeToFile("README.md", generateFile(answers));
     });
 };
 

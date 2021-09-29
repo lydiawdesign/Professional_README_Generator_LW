@@ -2,26 +2,26 @@ function generateFile(data){
     // project title displayed as README file
     return`# ${data.title}
     
-    ## Title:   ${data.title}
+    # ${data.title}
+
+    ## License:
 
     ## Description:
     ${data.description}
 
+
     ## Table of Contents:
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contribution](#contribution)
-    - [Testing](#testing)
-    - [Contact for Questions](#email)
+    1. [Installation](#installation)
+    2. [Usage](#usage)
+    3. [Contribution](#contribution)
+    4. [Testing](#testing)
+    5. [Contact for Questions](#email)
 
     ## Installation:
     ${data.installation}
 
     ## Usage:
     ${data.usage}
-
-    // ## License:
-    // ${data.licensing}
 
     ## Contribution:
     ${data.contribution}
@@ -30,8 +30,10 @@ function generateFile(data){
     ${data.testing}
 
     ## Contact for Questions:
-    Feel free to email me at ${data.email} or view my github profile at https://github.com/${data.github}
+    Feel free to **email** me at ${data.email} or view my **github profile** at https://github.com/${data.github}
     `;
 };
+
+
 
 module.exports = generateFile;
