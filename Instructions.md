@@ -8,8 +8,9 @@ AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 
+Link to Video: https://youtu.be/6WxNZW5UUTI
 
-##Acceptance Criteria##
+## Acceptance Criteria##
 
 GIVEN a command-line application that accepts user input
 
@@ -36,6 +37,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 ##Screenshots##
+![demo readme generator](https://user-images.githubusercontent.com/87274229/135197662-89a9b14b-c185-443a-99a9-78a1471d14ba.jpg)
 
 ##Contact##
 
