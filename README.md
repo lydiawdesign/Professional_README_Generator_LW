@@ -31,5 +31,5 @@
     test
 
   ## Contact for Questions:
-    Feel free to **email** me at test or view my **github profile** at https://github.com/test
+    Feel free to email me at test or view my github profile at https://github.com/test
     
